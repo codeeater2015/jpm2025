@@ -4,52 +4,52 @@ parameters:
     database_host: localhost
     database_port: 3306
     database_name: election_prep_2024_download
-    database_user: admin
+    database_user: jpm_admin
     database_password: kmmsitdadmin
     tupad_host: localhost
     tupad_port: 3306
     tupad_name: election_result
-    tupad_user: admin 
+    tupad_user: jpm_admin 
     tupad_password: kmmsitdadmin
     voter_province_host : localhost
     voter_province_port : 3306
     voter_province_name: election_prep_2024_download
-    voter_province_user: admin
+    voter_province_user: jpm_admin
     voter_province_password: kmmsitdadmin
     voter_2023_host : localhost
     voter_2023_port : 3306
     voter_2023_name: election_2025
-    voter_2023_user: admin
+    voter_2023_user: jpm_admin
     voter_2023_password: kmmsitdadmin
     elect_prep_2024_host : localhost
     elect_prep_2024_port : 3306
     elect_prep_2024_name: election_prep_2024_download
-    elect_prep_2024_user: admin
+    elect_prep_2024_user: jpm_admin
     elect_prep_2024_password: kmmsitdadmin
     # elect_host : localhost
     # elect_port : 3306
     # elect_name: election_result
-    # elect_user: admin
+    # elect_user: jpm_admin
     # elect_password: kmmsitdadmin
     # canlaon_host : localhost
     # canlaon_port : 3306
     # canlaon_name: voter_kanlaon
-    # canlaon_user: admin
+    # canlaon_user: jpm_admin
     # canlaon_password: kmmsitdadmin
 #    rescue_host: 127.0.0.1
 #    rescue_port: 3308
 #    rescue_name: voter_province_2021
-#    rescue_user: admin
+#    rescue_user: jpm_admin
 #    rescue_password: 
 #    province_host: 127.0.0.1
 #    province_port: 3308
 #    province_name: voter_province_2021
-#    province_user: admin
+#    province_user: jpm_admin
 #    province_password: 
     remote_host: 192.168.0.10
     remote_port: 3306
     remote_name: election_prep_2024_download
-    remote_user : admin
+    remote_user : jpm_admin
     remote_password : kmmsitdadmin
     remote_datasource : SANVICENTE_SERVER
     remote_ip_address : 192.168.0.10:3400
@@ -64,23 +64,23 @@ parameters:
     report_url : http://192.168.0.11:83/voter-report/web/voter/
     report_ip : 192.168.0.11:83
     jasper_ip : 192.168.1.4:8080GBBBBBB
-    report_org_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/JPM_Organization_Summary&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_org_summary_per_barangay : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/JPM_Organization_Summary_Per_Barangay&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_lgc_list : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/LGC_LIST&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_member_status_form : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Member_Status_Form&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_member_contact_list : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports%2FJPM/Members_Contact_List&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_household_encoding_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Household_Encoding_Summary&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_recruitment_encoding_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Recruitment_Encoding_Summary&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_barangay_total_precinct : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Barangay_Total_Precinct_List&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_provincial_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/JPM_ORGANIZATION_SUMMARY__PROVINCE_&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_municipal_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/JPM_Organization_Summary__Municipality_&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_non_voter_list : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/List_of_Non_Registered_Voter&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
-    report_member_status_by_lgc : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Member_Status_Form_By_LGC&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
-    report_member_status_by_municipality : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Member_Status_Form_By_Municipality&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
-    report_lgc_pjm_summary : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/LGC_PJM_MEMBER_SUMMARY&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
-    report_lppp1_summary_by_municipality : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/LPP1_TARGET_SUMMARY&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
-    report_upload_summary_by_province : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Upload_Summary&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
-    report_upload_summary_by_municipality : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Upload_Summary_1&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
-    report_orgnization_summary_municipality: /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Organization_Summary_2022_by_Municipality&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
-    report_orgnization_summary_province: /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Organization_Summary_2022&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
-    vlist_by_barangay: /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Vlist_By_Barangay&standAlone=true&j_username=jasperadmin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
+    report_org_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/JPM_Organization_Summary&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_org_summary_per_barangay : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/JPM_Organization_Summary_Per_Barangay&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_lgc_list : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/LGC_LIST&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_member_status_form : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Member_Status_Form&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_member_contact_list : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports%2FJPM/Members_Contact_List&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_household_encoding_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Household_Encoding_Summary&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_recruitment_encoding_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Recruitment_Encoding_Summary&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_barangay_total_precinct : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Barangay_Total_Precinct_List&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_provincial_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/JPM_ORGANIZATION_SUMMARY__PROVINCE_&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_municipal_summary : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/JPM_Organization_Summary__Municipality_&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_non_voter_list : '/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/List_of_Non_Registered_Voter&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no'
+    report_member_status_by_lgc : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Member_Status_Form_By_LGC&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
+    report_member_status_by_municipality : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Member_Status_Form_By_Municipality&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
+    report_lgc_pjm_summary : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/LGC_PJM_MEMBER_SUMMARY&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
+    report_lppp1_summary_by_municipality : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/LPP1_TARGET_SUMMARY&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
+    report_upload_summary_by_province : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Upload_Summary&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
+    report_upload_summary_by_municipality : /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Upload_Summary_1&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
+    report_orgnization_summary_municipality: /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Organization_Summary_2022_by_Municipality&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
+    report_orgnization_summary_province: /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Organization_Summary_2022&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
+    vlist_by_barangay: /jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=/reports/JPM&reportUnit=/reports/JPM/Vlist_By_Barangay&standAlone=true&j_username=jasperjpm_admin&j_password=kmmsitdadmin&theme=embed_theme&userLocale=en_US&decorate=no
