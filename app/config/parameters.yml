@@ -4,52 +4,52 @@ parameters:
     database_host: localhost
     database_port: 3306
     database_name: election_prep_2024_download
-    database_user: root
+    database_user: admin
     database_password: kmmsitdadmin
     tupad_host: localhost
     tupad_port: 3306
     tupad_name: election_result
-    tupad_user: root 
+    tupad_user: admin 
     tupad_password: kmmsitdadmin
     voter_province_host : localhost
     voter_province_port : 3306
     voter_province_name: election_prep_2024_download
-    voter_province_user: root
+    voter_province_user: admin
     voter_province_password: kmmsitdadmin
     voter_2023_host : localhost
     voter_2023_port : 3306
     voter_2023_name: election_2025
-    voter_2023_user: root
+    voter_2023_user: admin
     voter_2023_password: kmmsitdadmin
     elect_prep_2024_host : localhost
     elect_prep_2024_port : 3306
     elect_prep_2024_name: election_prep_2024_download
-    elect_prep_2024_user: root
+    elect_prep_2024_user: admin
     elect_prep_2024_password: kmmsitdadmin
     # elect_host : localhost
     # elect_port : 3306
     # elect_name: election_result
-    # elect_user: root
+    # elect_user: admin
     # elect_password: kmmsitdadmin
     # canlaon_host : localhost
     # canlaon_port : 3306
     # canlaon_name: voter_kanlaon
-    # canlaon_user: root
+    # canlaon_user: admin
     # canlaon_password: kmmsitdadmin
 #    rescue_host: 127.0.0.1
 #    rescue_port: 3308
 #    rescue_name: voter_province_2021
-#    rescue_user: root
+#    rescue_user: admin
 #    rescue_password: 
 #    province_host: 127.0.0.1
 #    province_port: 3308
 #    province_name: voter_province_2021
-#    province_user: root
+#    province_user: admin
 #    province_password: 
     remote_host: 192.168.0.10
     remote_port: 3306
     remote_name: election_prep_2024_download
-    remote_user : root
+    remote_user : admin
     remote_password : kmmsitdadmin
     remote_datasource : SANVICENTE_SERVER
     remote_ip_address : 192.168.0.10:3400
