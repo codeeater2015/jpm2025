@@ -1,0 +1,271 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+
+/**
+ * AssistanceProfile
+ *
+ * @ORM\Table(name="tbl_assistance_profile")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\AssistanceProfileRepository")
+ */
+class AssistanceProfile
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="profile_id", type="string", length=50)
+     */
+    private $profile_id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="district", type="string", length=15)
+     */
+    private $district;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="municipality_name", type="string", length=150)
+     */
+    private $municipalityName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="municipality_no", type="string", length=30)
+     * @Assert\NotBlank()
+     * 
+     */
+    private $municipalityNo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="barangay_name", type="string", length=150)
+     */
+    private $barangayName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="barangay_no", type="string", length=30)
+     * @Assert\NotBlank()
+     */
+    private $barangayNo;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="purok", type="string", length=30)
+     */
+    private $purok;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="firstname", type="string", length=150)
+     * @Assert\NotBlank()
+     */
+    private $firstname;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="middlename", type="string", length=150)
+     * @Assert\NotBlank()
+     */
+    private $middlename;
+
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="lastname", type="string", length=150)
+     * @Assert\NotBlank()
+     */
+    private $lastname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="extname", type="string", length=30)
+     */
+    private $extname;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="fullname", type="string", length=255)
+     */
+    private $fullname;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="birthdate", type="string", length=30)
+     */
+    private $birthdate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="contact_no", type="string", length=30)
+     */
+    private $contactNo;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="pro_voter_id", type="integer")
+     */
+    private $proVoterId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pro_id_code", type="string", length=30)
+     */
+    private $proIdCode;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="generated_id_no", type="string", length=30)
+     */
+    private $generatedIdNo;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="voter_name", type="string", length=255)
+     */
+    private $voterName;
+
+     /**
+     * @var int
+     *
+     * @ORM\Column(name="is_non_voter", type="integer", length=1)
+     */
+    private $isNonVoter;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="gender", type="string", length=15)
+     */
+    private $gender;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="educ_level", type="string", length=50)
+     */
+    private $educLevel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mothers_maiden_name", type="string", length=255)
+     */
+    private $mothersMaidenName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="civil_status", type="string", length=15)
+     */
+    private $civilStatus;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="skills", type="string", length=50)
+     */
+    private $skills;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="occupation", type="string", length=50)
+     */
+    private $occupation;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="monthly_income", type="string", length=50)
+     */
+    private $monthlyIncome;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="v_municipality_name", type="string", length=150)
+     */
+    private $vMunicipalityName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="v_barangay_name", type="string", length=150)
+     */
+    private $vBarangayName;
+
+     /**
+     * @var datetime
+     *
+     * @ORM\Column(name="created_at", type="datetime")
+     */
+    private $createdAt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="created_by", type="string", length=150)
+     */
+    private $createdBy;
+
+     /**
+     * @var datetime
+     *
+     * @ORM\Column(name="updated_at", type="datetime")
+     */
+    private $updatedAt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="updated_by", type="string", length=150)
+     */
+    private $updatedBy;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="remarks", type="string", length=256)
+     */
+    private $remarks;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="status", type="string", length=3)
+     * @Assert\NotBlank()
+     */
+    private $status;   
+}

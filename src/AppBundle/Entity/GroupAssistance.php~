@@ -1,0 +1,106 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+
+
+/**
+ * GroupAssistance
+ *
+ * @ORM\Table(name="tbl_group_assistance")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\GroupAssistanceRepository")
+ */
+
+class GroupAssistance
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="hdr_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $hdrId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="municipality_name", type="string", length=150)
+     */
+    private $municipalityName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="batch_label", type="string", length=150)
+     */
+    private $batchLabel;
+
+     /**
+     * @var string
+     *
+     * @ORM\Column(name="batch_date", type="string", length=50)
+     */
+    private $batchDate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="assist_type", type="string", length=50)
+     */
+    private $assistType;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="total_profiles", type="integer")
+     */
+    private $totalProfiles;
+   
+     /**
+     * @var datetime
+     *
+     * @ORM\Column(name="created_at", type="datetime")
+     */
+    private $createdAt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="created_by", type="string", length=150)
+     */
+    private $createdBy;
+
+     /**
+     * @var datetime
+     *
+     * @ORM\Column(name="updated_at", type="datetime")
+     */
+    private $updatedAt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="updated_by", type="string", length=150)
+     */
+    private $updatedBy;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="remarks", type="string", length=256)
+     */
+    private $remarks;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="status", type="string", length=3)
+     * @Assert\NotBlank()
+     */
+    private $status;
+}
+
