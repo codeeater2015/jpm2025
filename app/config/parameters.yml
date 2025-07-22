@@ -8,7 +8,7 @@ parameters:
     database_password: kmmsitdadmin
     tupad_host: localhost
     tupad_port: 3306
-    tupad_name: election_result
+    tupad_name: election_prep_2024_download
     tupad_user: jpm_admin 
     tupad_password: kmmsitdadmin
     voter_province_host : localhost
@@ -18,7 +18,7 @@ parameters:
     voter_province_password: kmmsitdadmin
     voter_2023_host : localhost
     voter_2023_port : 3306
-    voter_2023_name: election_2025
+    voter_2023_name: election_prep_2024_download
     voter_2023_user: jpm_admin
     voter_2023_password: kmmsitdadmin
     elect_prep_2024_host : localhost
