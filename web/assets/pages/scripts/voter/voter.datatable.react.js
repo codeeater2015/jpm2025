@@ -378,7 +378,7 @@ var VoterDatatable = React.createClass({
                     {
                         'className': 'text-center valign-middle',
                         'orderable': false,
-                        'targets': [0, 4, 5, 6, 7, 8, 9, 10]
+                        'targets': [0, 4, 5, 6, 7, 8, 9, 10, 11]
                     }
                 ],
                 "order": [
@@ -453,6 +453,17 @@ var VoterDatatable = React.createClass({
                             return (Number.parseInt(row.is_jtr_member) == 1 || Number.parseInt(row.is_jtr_leader) == 1 ) ? "YES" : "NO";
                         }
                     },
+                    
+                    {
+                        "data": "voter_group",
+                        "className": "text-center",
+                        "width": 60,
+                        "render": function (data, type, row) {
+                            var text = row.voter_group ;
+                            return text;
+                        }
+                    },
+
                     {
                         "data": "status",
                         "className": "text-center",
@@ -969,6 +980,7 @@ var VoterDatatable = React.createClass({
                                 <th className="text-center">CP No.</th>
                                 <th className="text-center">JPM ID Holder</th>
                                 <th className="text-center">JPM-JTR</th>
+                                <th className="text-center">POS</th>
                                 <th className="text-center">Status</th>
                                 <th></th>
                             </tr>
@@ -997,6 +1009,8 @@ var VoterDatatable = React.createClass({
                                 </td>
                                 <td style={{ padding: "10px 5px" }}>
                                     <input type="text" className="form-control form-filter input-sm" name="voter_group" onChange={this.handleFilterChange} />
+                                </td>
+                                <td>
                                 </td>
                                 <td>
                                 </td>
